@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragmentos/head :: cabecera('GTICS F')"></head>
+<body background="">
+<main>
+    <div class="container px-4 py-5">
+        <h1 class="pb-2 border-bottom">GTICS F</h1>
+        <div class="d-flex mt-lg-5 mb-5">
+            <a class="btn btn-primary"  style="margin: 10px" th:href="@{'/sitios/lista'}">Sitios</a>
+            <a class="btn btn-primary"  style="margin: 10px"th:href="@{'/equipos/lista'}">Equipos</a>
+            <a class="btn btn-primary"  style="margin: 10px"th:href="@{'/estadisticas/lista'}">Estadisticas</a>
+        </div>
+    </div>
+</main>
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
